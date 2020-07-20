@@ -1,0 +1,175 @@
+/* importando a fonte  Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    border: 0;
+}
+
+:root {
+    --color-rose: #FBDFDB;
+}
+
+body {
+    margin: 0 125px;
+    /* background-color:rebeccapurple; */
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    text-align: inline;
+}
+
+.cabecalho {
+    margin: 45px 0px 0px 0px;
+
+}
+
+.link {
+    text-decoration: none;
+    color: #111111;
+    padding: 32px;
+    font-size: 20px;
+}
+
+.cabecalho img {
+    margin-right: 114px;
+    margin-bottom: -8px;
+}
+
+.sobre {
+    margin-top: 35px;
+    background-color: var(--color-rose);
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.sobre h1 {
+    padding-top: 45px;
+    padding-left: 95px;
+}
+
+.sobre p {
+    font-family: 'Roboto', sans-serif;
+    width: 35%;
+    padding-left: 95px;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.sobre .image {
+    margin-top: -132px;
+    margin-left: 750px;
+    max-width: 100%;
+    
+}
+
+.titulo {
+    margin: 45px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bloco {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 45px;
+    
+}
+
+.receitas {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.receitas  img{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.receitas h3 {
+    margin-top: 20px;
+}
+
+footer {
+    background-color:var(--color-rose) ;
+    max-width: 100%;
+    padding: 32px;
+    text-align: center;
+    margin-top: 45px;
+    border-radius: 10px;
+}
+
+.conteudo {
+    margin-top: 80px;
+}
+
+.description h1 {
+    margin-top: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.description p {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px auto;
+    color: #777777;
+}
+
+.modal{
+
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    margin: 10% 25% 20% 22%;
+    max-width: 500px;
+    height: 350px;
+    border-radius: 8px;
+
+    /* fazer o modal desaparecer  */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modalReceitas {
+    background-color:#ffebe9b4;
+    width: 80%;
+    height: 80%;
+    /* vh visao da aultura  */
+    margin: 5vh auto;
+    /* relative posição relativa  */
+    position: relative;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.modalReceitas .close-modal {
+    position: absolute;
+    cursor: pointer;
+    margin: 10px 364px;
+    
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content img {
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    border-radius: 6px;
+}
+
+.modal-content h3, 
+.modal-content p {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    text-align: center;
+}
